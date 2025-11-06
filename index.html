@@ -12,24 +12,49 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: black">
+  <body style="background-color: rgb(16, 173, 50)">
     <!-- --------------NAVEGACIÓN/MENÚ-------------------------- -->
-    <nav class="navbar sticky-top bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
+    <nav class="navbar sticky-top bg-body-tertiary d-flex">
+      <div class="logo-box container-fluid justify-content-around">
+        <a class="navbar-brand p-0 mb-1" href="/">
           <img src="assets/imagenes/logo-udvillalba.png" class="logo" />
         </a>
-      </div>
-      <div>
-        <ul>
-          <li>Horario</li>
-          <li>Clasificación</li>
-          <li>Entrenamientos extra</li>
-          <li>Noticias</li>
-        </ul>
+        <div>
+          <ul class="menu d-flex list-unstyled gap-5 fw-semibold">
+            <li>HORARIO</li>
+            <li>CLASIFICACIÓN</li>
+            <li>ENTRENAMIENTO EXTRA</li>
+            <li>MENÚ</li>
+            <li>NOTICIAS</li>
+          </ul>
+        </div>
+        <em class="eslogan fs-5">Un escudo, una ilusión</em>
       </div>
     </nav>
+    <div class="d-flex justify-content-start m-5 ">
+      <section class="infantil-box bg-body-tertiary rounded d-flex col-12 justify-content-around align-item-center">
+       
+        <div class="foto-infantil-box d-flex justify-content-center">
+           <h1 class="titulo text-center mt-4 fs-2">INFANTIL FEMENINO</h1>
+           <img
+            src="assets/imagenes/infantil-femenino.jpg"
+            class="foto-infantil rounded"
+          />
+        </div>
+          <div class="vs-box">
+            <h2 class="vs d-flex">VS</h2>
+          </div>
+           <div class="foto-rival d-flex justify-content-center">
+             <h1 class="titulo text-center mt-4 fs-2">C.D. GALAPAGAR</h1>
 
+          <img
+            src="assets/imagenes/logo-cdg.png"
+            class="foto-rival rounded"
+          />
+        </div>
+        
+      </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
