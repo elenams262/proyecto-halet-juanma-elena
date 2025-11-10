@@ -144,3 +144,18 @@ background-color: rgb(252, 230, 110);
   align-items: center;
   gap: 2rem; /* espacio entre elementos */
 }
+.noticias-box{ 
+      width: 100%; /* ocupa todo el ancho disponible */
+  max-width: 1200px; /* límite máximo opcional */
+  height: auto; /* deja que crezca según el contenido */
+  margin: 2rem auto; /* centrada horizontalmente */
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap; /* si hay varias imágenes, que bajen de línea */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* espacio entre elementos */
+}
