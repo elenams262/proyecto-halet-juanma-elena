@@ -1,31 +1,146 @@
-
+.body{
+    background-color: rgb(16, 173, 50);
+}
 
 /* ///////////NAVBAR////////// */
 
-nav{
-    height: 100px;
-}
-.logo-box{
-
-}
-.navbar-brand{
-
-}
-.logo{
-    width:90px;
-    height: auto;
-    
+nav {
+  height: 100px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.infantil-box{
-    width: 2000px;
-    height: 400px;
+.logo-box {
+}
+.navbar-brand {
+}
+.logo {
+  width: 90px;
+  height: auto;
+}
+.infantil-box {
+  width: 100%; /* ocupa todo el ancho disponible */
+  max-width: 1200px; /* límite máximo opcional */
+  height: auto; /* deja que crezca según el contenido */
+  margin: 2rem auto; /* centrada horizontalmente */
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap; /* si hay varias imágenes, que bajen de línea */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* espacio entre elementos */
 }
 
-.foto-infantil{
-    width: 400px;
-}
-.vs-box{
-   
+/* Ajusta las imágenes internas */
+.infantil-box img {
+  width: 100%;
+  max-width: 350px; /* tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover; /* evita deformaciones */
 }
 
+.foto-infantil {
+  width: 400px;
+}
+/* === CONTENEDOR PRINCIPAL === */
+.infantil-box {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center; /* 👈 centra verticalmente todos los hijos */
+  justify-content: center; /* 👈 centra horizontalmente */
+  gap: 4rem; /* espacio entre los tres bloques (local, vs, rival) */
+  flex-wrap: wrap; /* permite que se acomoden en pantallas pequeñas */
+}
+
+/* === BLOQUE DEL VS === */
+.vs-box {
+  display: flex; /* activa flexbox para el texto interno */
+  align-items: center; /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente */
+  width: 100px; /* ancho fijo para que quede equilibrado */
+  height: 100px; /* alto igual para formar un cuadrado */
+  border-radius: 50%; /* 👈 lo convierte en círculo */
+  background-color: #fff; /* fondo blanco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra suave */
+}
+
+/* Texto "VS" centrado dentro del círculo */
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(16, 173, 50);
+  margin: 0;
+}
+
+/* === EQUIPO LOCAL Y RIVAL === */
+.foto-infantil-box,
+.foto-rival {
+  display: flex;
+  flex-direction: column; /* apila título e imagen */
+  align-items: center; /* centra horizontalmente */
+  text-align: center;
+  gap: 0.5rem;
+}
+
+/* Imágenes */
+.foto-infantil {
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,  0,  0,  0.25);
+}
+.foto-rival-img {
+  width: 200px !important;
+  height: auto !important;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,  0,  0,  0.25);
+}
+
+/*///////selector entrenamientos//////////*/
+.entrenamientos-box{
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center; /* 👈 centra verticalmente todos los hijos */
+  justify-content: center; /* 👈 centra horizontalmente */
+  gap: 4rem; /* espacio entre los tres bloques (local, vs, rival) */
+  flex-wrap: wrap; /* permite que se acomoden en pantallas pequeñas */
+}
+
+.entrenamiento-select{
+border-radius: 5px;
+border-color: rgb(16, 173, 50);
+background-color: rgb(252, 230, 110);
+}
+
+.menu-box{
+      width: 100%; /* ocupa todo el ancho disponible */
+  max-width: 1200px; /* límite máximo opcional */
+  height: auto; /* deja que crezca según el contenido */
+  margin: 2rem auto; /* centrada horizontalmente */
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap; /* si hay varias imágenes, que bajen de línea */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* espacio entre elementos */
+}

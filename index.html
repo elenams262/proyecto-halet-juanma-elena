@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: rgb(16, 173, 50)">
+  <body class="body">
     <!-- --------------NAVEGACIÓN/MENÚ-------------------------- -->
     <nav class="navbar sticky-top bg-body-tertiary d-flex">
       <div class="logo-box container-fluid justify-content-around">
@@ -31,31 +31,73 @@
         <em class="eslogan fs-5">Un escudo, una ilusión</em>
       </div>
     </nav>
-    <div class="d-flex justify-content-start m-5 ">
-      <section class="infantil-box bg-body-tertiary rounded d-flex col-12 justify-content-around align-item-center">
-       
+    <img src="assets/imagenes/infantil-femenino.jpg" class="infantil-box mb-5" />
+     <div class="jornada col-12 d-flex align-item-center justify-content-center ">
+          <h2>JORNADA 1</h2>
+        </div>
+        <div class="d-flex justify-content-start m-4">
+      <section
+        class="infantil-box bg-body-tertiary rounded d-flex col-12 justify-content-around align-item-center"
+      >
+      
         <div class="foto-infantil-box d-flex justify-content-center">
-           <h1 class="titulo text-center mt-4 fs-2">INFANTIL FEMENINO</h1>
-           <img
-            src="assets/imagenes/infantil-femenino.jpg"
+          <h1 class="titulo text-center mt-4 fs-2">INFANTIL FEMENINO</h1>
+          <br />
+          <img
+            src="assets/imagenes/logo-udvillalba.png"
             class="foto-infantil rounded"
           />
         </div>
-          <div class="vs-box">
-            <h2 class="vs d-flex">VS</h2>
-          </div>
-           <div class="foto-rival d-flex justify-content-center">
-             <h1 class="titulo text-center mt-4 fs-2">C.D. GALAPAGAR</h1>
-
+        <div class="vs-box">
+          <h2 class="vs d-flex">VS</h2>
+        </div>
+       
+        <div
+          class="foto-rival d-flex justify-content-center flex-column align-items-center"
+        >
+          <h1 class="titulo text-center mt-4 fs-2">C.D. GALAPAGAR</h1>
           <img
             src="assets/imagenes/logo-cdg.png"
-            class="foto-rival rounded"
+            class="foto-rival-img rounded"
+            alt="Logo C.D. Galapagar"
           />
         </div>
-        
+
       </section>
     </div>
-    <p>fjbeqrpjfnprjfnejrgnwjergb2j4g</p>
+       <h2 class="entrenamientos text-center"> ENTRENAMIENTOS EXTRA
+
+            </h2> 
+            
+            <div class="d-flex justify-content-start m-5">
+            
+      <section
+        class="entrenamientos-box bg-body-tertiary rounded d-flex col-12 justify-content-around align-item-center p-3"
+      >
+      
+   <select class="entrenamiento-select fw-bold text-center"  >
+  <option selected class="titulo-select fw-semibold">¿Qué quieres mejorar?</option>
+  <option value="fuerza">Fuerza</option>
+  <option value="velocidad">Velocidad</option>
+  <option value="cardio">Cardio</option>
+    <option value="propiocepcion">Propiocepción</option>
+
+</select>
+</div>
+  <h2 class="menu text-center"> MENÚ SEMANAL
+
+            </h2> 
+      </section>
+       <div class="d-flex justify-content-start m-5">
+            <section
+        class="menu-box bg-body-tertiary rounded d-flex col-12 justify-content-around align-item-center p-3"
+      >
+      <img src="assets/imagenes/menu-semanal.png " class="rounded" >
+
+      </section>
+    </div>
+    
     <script src="script.js"></script>
+     
   </body>
 </html>
