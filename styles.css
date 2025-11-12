@@ -1,52 +1,18 @@
-.body{
-    background-color: rgb(16, 173, 50);
+.body {
+  background-color: rgb(16, 173, 50);
 }
 
-/* ///////////NAVBAR////////// */
-
-nav {
-  height: 100px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-.logo-box {
-}
-.navbar-brand {
-}
 .logo {
   width: 90px;
   height: auto;
 }
-.infantil-box {
-  width: 100%; /* ocupa todo el ancho disponible */
-  max-width: 1200px; /* límite máximo opcional */
-  height: auto; /* deja que crezca según el contenido */
-  margin: 2rem auto; /* centrada horizontalmente */
-  padding: 2rem;
-  border-radius: 16px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-wrap: wrap; /* si hay varias imágenes, que bajen de línea */
-  justify-content: center;
-  align-items: center;
-  gap: 2rem; /* espacio entre elementos */
-}
 
-/* Ajusta las imágenes internas */
-.infantil-box img {
-  width: 100%;
-  max-width: 350px; /* tamaño máximo de la imagen */
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover; /* evita deformaciones */
-}
-
-.foto-infantil {
-  width: 400px;
-}
-/* === CONTENEDOR PRINCIPAL === */
-.infantil-box {
+/* CONTENEDORES GENERALES */
+.infantil-box,
+.entrenamientos-box,
+.menu-box,
+.noticias-box,
+.clasificacion-box {
   width: 100%;
   max-width: 1200px;
   margin: 2rem auto;
@@ -54,122 +20,65 @@ nav {
   border-radius: 16px;
   background-color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center; /* 👈 centra verticalmente todos los hijos */
-  justify-content: center; /* 👈 centra horizontalmente */
-  gap: 4rem; /* espacio entre los tres bloques (local, vs, rival) */
-  flex-wrap: wrap; /* permite que se acomoden en pantallas pequeñas */
 }
 
-/* === BLOQUE DEL VS === */
+/* PARTIDO */
+.foto-infantil,
+.foto-rival-img {
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.foto-infantil {
+  width: 300px;
+  height: 300px;
+}
+
+.foto-rival-img {
+  width: 200px;
+}
+
 .vs-box {
-  display: flex; /* activa flexbox para el texto interno */
-  align-items: center; /* centra verticalmente */
-  justify-content: center; /* centra horizontalmente */
-  width: 100px; /* ancho fijo para que quede equilibrado */
-  height: 100px; /* alto igual para formar un cuadrado */
-  border-radius: 50%; /* 👈 lo convierte en círculo */
-  background-color: #fff; /* fondo blanco */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra suave */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Texto "VS" centrado dentro del círculo */
 .vs {
   font-size: 2rem;
   font-weight: bold;
   color: rgb(16, 173, 50);
-  margin: 0;
 }
 
-/* === EQUIPO LOCAL Y RIVAL === */
-.foto-infantil-box,
-.foto-rival {
-  display: flex;
-  flex-direction: column; /* apila título e imagen */
-  align-items: center; /* centra horizontalmente */
-  text-align: center;
-  gap: 0.5rem;
+/* ENTRENAMIENTOS */
+.entrenamiento-select {
+  border-radius: 5px;
+  border-color: rgb(16, 173, 50);
+  background-color: rgb(252, 230, 110);
+  padding: 0.5rem 1rem;
 }
 
-/* Imágenes */
-.foto-infantil {
-  width: 300px !important;
-  height: 300px !important;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,  0,  0,  0.25);
-}
-.foto-rival-img {
-  width: 200px !important;
-  height: auto !important;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,  0,  0,  0.25);
-}
-/* /////////CLASIFICACION///////// */
-
-
-
-
-/*///////selector entrenamientos//////////*/
-.entrenamientos-box{
+/* IMÁGENES */
+.foto-menu {
   width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 16px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center; /* 👈 centra verticalmente todos los hijos */
-  justify-content: center; /* 👈 centra horizontalmente */
-  gap: 4rem; /* espacio entre los tres bloques (local, vs, rival) */
-  flex-wrap: wrap; /* permite que se acomoden en pantallas pequeñas */
+  max-width: 1000px;
 }
 
-.entrenamiento-select{
-border-radius: 5px;
-border-color: rgb(16, 173, 50);
-background-color: rgb(252, 230, 110);
-}
-
-.menu-box{
-      width: 100%; /* ocupa todo el ancho disponible */
-  max-width: 1200px; /* límite máximo opcional */
-  height: auto; /* deja que crezca según el contenido */
-  margin: 2rem auto; /* centrada horizontalmente */
-  padding: 2rem;
-  border-radius: 16px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-wrap: wrap; /* si hay varias imágenes, que bajen de línea */
-  justify-content: center;
-  align-items: center;
-  gap: 2rem; /* espacio entre elementos */
-}
-.foto-menu{
-  width: 100%;
-    max-width: 1200px; /* límite máximo opcional */
-
-}
-.noticias-box{ 
-      width: 100%; /* ocupa todo el ancho disponible */
-  max-width: 1200px; /* límite máximo opcional */
-  height: auto; /* deja que crezca según el contenido */
-  margin: 2rem auto; /* centrada horizontalmente */
-  padding: 2rem;
-  border-radius: 16px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-wrap: wrap; /* si hay varias imágenes, que bajen de línea */
-  justify-content: center;
-  align-items: center;
-  gap: 2rem; /* espacio entre elementos */
-}
-.imagen-noticia{
+.imagen-noticia {
   width: 350px;
   height: 500px;
- 
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* NAVBAR */
+nav {
+  height: 100px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
