@@ -106,6 +106,10 @@ nav {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,  0,  0,  0.25);
 }
+/* /////////CLASIFICACION///////// */
+
+
+
 
 /*///////selector entrenamientos//////////*/
 .entrenamientos-box{
@@ -144,6 +148,11 @@ background-color: rgb(252, 230, 110);
   align-items: center;
   gap: 2rem; /* espacio entre elementos */
 }
+.foto-menu{
+  width: 100%;
+    max-width: 1200px; /* límite máximo opcional */
+
+}
 .noticias-box{ 
       width: 100%; /* ocupa todo el ancho disponible */
   max-width: 1200px; /* límite máximo opcional */
@@ -158,4 +167,9 @@ background-color: rgb(252, 230, 110);
   justify-content: center;
   align-items: center;
   gap: 2rem; /* espacio entre elementos */
+}
+.imagen-noticia{
+  width: 350px;
+  height: 500px;
+ 
 }
