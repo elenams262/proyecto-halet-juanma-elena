@@ -7,8 +7,25 @@
   height: auto;
 }
 
+/* NAVBAR */
+nav {
+  height: 100px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.menu a{
+  text-decoration: none;
+  color: inherit
+}
+
+.menu a:hover {
+  color: rgb(16, 173, 50) !important; /* Color verde al pasar el ratón, opcional */
+  text-decoration: none;
+}
+
 /* CONTENEDORES GENERALES */
 .infantil-box,
+.jornada-box,
 .entrenamientos-box,
 .menu-box,
 .noticias-box,
@@ -23,16 +40,17 @@
 }
 
 /* PARTIDO */
+
 .foto-infantil,
 .foto-rival-img {
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .foto-infantil {
   width: 300px;
   height: 300px;
+  background-color: transparent !important;
 }
 
 .foto-rival-img {
@@ -77,8 +95,3 @@
   border-radius: 12px;
 }
 
-/* NAVBAR */
-nav {
-  height: 100px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}

@@ -21,11 +21,11 @@
         </a>
         <div>
           <ul class="menu d-flex list-unstyled gap-5 fw-semibold">
-            <li>HORARIO</li>
-            <li>CLASIFICACIÓN</li>
-            <li>ENTRENAMIENTO EXTRA</li>
-            <li>MENÚ</li>
-            <li>NOTICIAS</li>
+            <a href="#jornada"><li>HORARIO</li></a>
+            <a href="#clasificacion"><li>CLASIFICACIÓN</li></a>
+            <a href="#entrenamiento"><li>ENTRENAMIENTO EXTRA</li></a>
+            <a href="#menu"><li>MENÚ</li></a>
+            <a href="#noticias"><li>NOTICIAS</li></a>
           </ul>
         </div>
         <em class="eslogan fs-5">Un escudo, una ilusión</em>
@@ -33,23 +33,23 @@
     </nav>
     <img src="assets/imagenes/infantil-femenino.jpg" class="infantil-box mb-5 text-center d-flex" />
      <div class="jornada col-12 d-flex align-item-center justify-content-center ">
-          <h2>JORNADA 1</h2>
+          <h2 id="jornada">JORNADA 1</h2>
         </div>
         <div class="d-flex justify-content-start m-4">
       <section
-        class="infantil-box bg-body-tertiary rounded d-flex col-12 justify-content-around align-item-center"
+        class="jornada-box rounded d-flex col-12 justify-content-around align-item-center"
       >
       
-        <div class="foto-infantil-box d-flex justify-content-center">
+        <div class="foto-infantil-box  d-flex justify-content-center flex-column align-items-center">
           <h1 class="titulo text-center mt-4 fs-2">INFANTIL FEMENINO</h1>
           <br />
           <img
             src="assets/imagenes/logo-udvillalba.png"
-            class="foto-infantil rounded d-flex"
+            class="foto-infantil rounded d-flex "
           />
         </div>
-        <div class="vs-box">
-          <h2 class="vs d-flex">VS</h2>
+        <div class="vs-box m-3">
+          <h2 class="vs d-flex ">VS</h2>
         </div>
        
         <div
@@ -66,7 +66,7 @@
 </div>
       </section>
 <section class="text-center my-4">
-  <h2 class="clasificacion mb-4">CLASIFICACIÓN</h2>
+  <h2 class="clasificacion mb-4" id="clasificacion">CLASIFICACIÓN</h2>
 
   <div class="d-flex justify-content-center">
     <div class="clasificacion-box bg-body-tertiary rounded p-3 text-center">
@@ -76,7 +76,7 @@
   </div>
 </section>
     
-       <h2 class="entrenamientos text-center p-3"> ENTRENAMIENTOS EXTRA</h2> 
+       <h2 class="entrenamientos text-center p-3" id="entrenamiento"> ENTRENAMIENTOS EXTRA</h2> 
             
             <div class="d-flex justify-content-start m-4 mt-1">
             
@@ -93,7 +93,7 @@
 
 </select>
 </div>
-  <h2 class="menu text-center"> MENÚ SEMANAL
+  <h2 class="menu text-center" id="menu"> MENÚ SEMANAL
 
             </h2> 
       </section>
@@ -105,7 +105,7 @@
 
       </section>
       </div>
-  <h2 class="noticias text-center p-1"> NOTICIAS
+  <h2 class="noticias text-center p-1" id="noticias"> NOTICIAS
 
             </h2> 
             <section
