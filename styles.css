@@ -5,6 +5,13 @@
 .logo {
   width: 90px;
   height: auto;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  }
+
+.logo:hover{
+  
+   transform: scale(1.2);
 }
 
 /* NAVBAR */
