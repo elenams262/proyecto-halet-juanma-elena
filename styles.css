@@ -22,7 +22,7 @@ nav {
 
 .menu a{
   text-decoration: none;
-  color: inherit
+  color: inherit !important
 }
 
 .menu a:hover {
@@ -46,8 +46,17 @@ nav {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* PARTIDO */
+/* h2 */
+.jornada,
+.clasificacion,
+.entrenamientos,
+.menu-titulo,
+.noticias{
+  color: yellow ;
+  letter-spacing: 2px;
+}
 
+/* JORNADA */
 .foto-infantil,
 .foto-rival-img {
   object-fit: cover;
